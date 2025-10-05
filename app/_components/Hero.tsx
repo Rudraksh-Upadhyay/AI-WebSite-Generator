@@ -52,9 +52,7 @@ function Hero() {
                 <div className='flex justify-between items-center '>
                     <Button variant={'ghost'} className='mt-3 float-left hover:bg-pink-400'><ImagePlusIcon/></Button>
                     
-                    <SignInButton mode='modal' forceRedirectUrl={'/workspace '}>
-
-
+                    <SignInButton mode='modal' forceRedirectUrl={'/workspace'}>
                         <Button disabled={!userInput} className='mt-3 hover:bg-pink-500'><ArrowUp/></Button>
                     </SignInButton>
                 </div>

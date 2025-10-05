@@ -10,21 +10,19 @@ function Provider ({
   children: React.ReactNode;
 }>) {
 
-  const {user} = useUser(); 
+  const {user} = useUser();
   useEffect(() => {
-    user && CreateNewUser(); 
+    user && CreateNewUser();
   },[user])
 
-  const CreateNewUser = async() => {
+  const CreateNewUser = async () => {
     //if user already exists ? 
-    const result = await axios.post('/api/users',{});
+    const result = await axios.post('./api/users',{
+
+    })
     console.log(result.data);
 
   }
-
-
-
-
 
   return (
     <div>

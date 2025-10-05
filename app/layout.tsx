@@ -4,13 +4,15 @@ import "./globals.css";
 
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
+  // SignInButton,
+  // SignUpButton,
+  // SignedIn,
+  // SignedOut,
+  // UserButton,
 } from '@clerk/nextjs'
+// import Provider from "./provider";
 import { Provider } from "@radix-ui/react-tooltip";
+
 
 
 export const metadata: Metadata = {
@@ -33,10 +35,12 @@ export default function RootLayout({
         <body
         className={outfit.className}
         >
-          <Provider>
+          
+        <Provider>
 
             {children}
-          </Provider>
+        </Provider>
+          
         </body>
       </html>
     </ClerkProvider>

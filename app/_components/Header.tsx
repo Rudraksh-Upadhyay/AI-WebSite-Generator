@@ -21,7 +21,7 @@ function Header() {
         {/* logo */}
         <div className='flex gap-2 items-center'>
 
-            <Image 
+            <Image
             className="mx-5 my-5"
             src={"/logo.svg"} alt='logo' width={35} height={35} />
             
